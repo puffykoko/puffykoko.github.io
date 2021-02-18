@@ -1,0 +1,51 @@
+.HeaderText {
+  font-size: 40px;
+  font-family: "Roboto";
+  letter-spacing: 5px;
+  color: black;
+  display: inline;
+  position: relative;
+  top: 30vh;
+  left: 10vw;
+  z-index: 1;
+  text-shadow: 2px 2px 5px grey;
+}
+
+.LandingOuterWrapper {
+  margin: 0;
+  padding: 0;
+  width: 100vh;
+  height: 100vw;
+  transform: rotate(-90deg) translateX(-100vh);
+  transform-origin: top left;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  position: absolute;
+  scroll-behavior: smooth;
+}
+
+.LandingInnerWrapper {
+  display: flex;
+  flex-direction: horizontal;
+  width: 300vw;
+  transform: rotate(90deg) translateY(-100vh);
+  transform-origin: top left;
+}
+
+.slide {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+}
+
+.one {
+  background-color: #fff1cc;
+}
+
+.two {
+  background-color: #ffe8ae;
+}
+
+.three {
+  background-color: #ffe8ae;
+}

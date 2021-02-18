@@ -1,0 +1,49 @@
+* {
+  //border: 1px solid grey;
+}
+
+.HeaderContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  align-content: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  color: #317fb8;
+  font-size: calc(10px + 1vmin);
+  padding: 5vh 5vw;
+  margin-bottom: 5vh;
+}
+
+.HeaderTitle {
+  font-family: "Roboto";
+  font-size: 25px;
+  color: #4f4f4f;
+  letter-spacing: 4px;
+  position: relative;
+  text-decoration: none;
+}
+
+.HeaderNavBar {
+  display: flex;
+  position: relative;
+}
+
+.HeaderNavLink {
+  padding: 0px 20px;
+  font-weight: bold;
+  color: #4f4f4f;
+  text-decoration: none;
+}
+
+@media screen and (max-width: 1000px) {
+  .HeaderNavLink {
+    /*maintain space between tabs*/
+    margin-bottom: 5vh;
+  }
+
+  .Button {
+    border: none;
+    padding: 0;
+  }
+}

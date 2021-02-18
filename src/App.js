@@ -1,26 +1,33 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import { BrowserRouter as Router, Route, Link, Switch } from "react-router-dom";
+import { colors, fonts, mediaQueries } from "./shared/config";
+import Header from "./components/Header";
+import BlogPage from "./pages/BlogPage";
+import ArticleExample from "./pages/ArticleExample";
+import matcha from "./images/matcha-latte.PNG";
+import LandingPage from "./pages/LandingPage";
 
-function App() {
+import "./App.css";
+function AppRouter() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <div className="App">
+        <link
+          rel="stylesheet"
+          href="https://fonts.googleapis.com/css?family=Roboto"
+        />
+        <Switch>
+          <Route path="/" exact component={LandingPage} />
+          <Route path="/" component={Header} />
+        </Switch>
+
+        <Route path="/blog/" component={BlogPage} />
+        <Route path="/projects/" component={BlogPage} />
+        <Route path="/resume/" component={BlogPage} />
+        <Route path="/post1/" component={ArticleExample} />
+      </div>
+    </Router>
   );
 }
 
-export default App;
+export default AppRouter;

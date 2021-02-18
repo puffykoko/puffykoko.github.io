@@ -1,0 +1,86 @@
+.ball-container {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  animation: moveRight linear 10s infinite;
+}
+
+.ball {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  background-color: #f9b17c;
+  border-radius: 50%;
+  display: flex;
+  animation: roll linear 10s infinite;
+  box-shadow: 10px -10px rgba(0, 0, 0, 0.6);
+}
+
+.roll {
+}
+
+@keyframes roll {
+  0% {
+    transform: rotate(-20deg);
+  }
+  50% {
+    transform: rotate(360deg);
+  }
+  52% {
+    transform: rotate(380deg);
+  }
+  70% {
+    transform: rotate(380deg);
+  }
+  100% {
+    transform: rotate(-20deg);
+  }
+}
+
+@keyframes moveRight {
+  0% {
+    transform: translateX(0px);
+  }
+  50% {
+    transform: translateX(300px);
+  }
+  52% {
+    transform: translateX(310px);
+  }
+  70% {
+    transform: translateX(310px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}
+
+.eye {
+  width: 20px;
+  height: 25px;
+  border-radius: 50%;
+  background-color: white;
+  position: relative;
+  animation: blink 5s infinite;
+}
+
+@keyframes blink {
+  0%,
+  100% {
+    transform: scale(1, 0.05);
+  }
+  2.5%,
+  97.5% {
+    transform: scale(1, 1);
+  }
+}
+
+.pupil {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: black;
+  position: relative;
+  top: 7.5px;
+  left: 5px;
+}

@@ -1,0 +1,75 @@
+.ball-container {
+  position: relative;
+  left: 45%;
+  top: 50%;
+  width: 100px;
+  -webkit-animation: moveRight 5s infinite;
+}
+
+.ball {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  background-color: #f9b17c;
+  border-radius: 50%;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 30px;
+  padding-left: 10px;
+  padding-right: 40px;
+  -webkit-animation: roll 5s infinite;
+}
+
+@-webkit-keyframes roll {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(360deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+@-webkit-keyframes moveRight {
+  0% {
+    transform: translateX(0px);
+  }
+  50% {
+    transform: translateX(300px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}
+
+.eye {
+  width: 20px;
+  height: 25px;
+  border-radius: 50%;
+  background-color: white;
+  position: relative;
+  -webkit-animation: blink 5s infinite;
+}
+
+@-webkit-keyframes blink {
+  0%,
+  100% {
+    transform: scale(1, 0.05);
+  }
+  2.5%,
+  97.5% {
+    transform: scale(1, 1);
+  }
+}
+
+.pupil {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: black;
+  position: relative;
+  top: 7.5px;
+  left: 5px;
+}

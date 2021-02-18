@@ -1,0 +1,13 @@
+.AboutContainer{
+  display: flex;
+  font-family: "Roboto";
+  font-size: 25px;
+  justify-content: center;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.AboutText{
+  width: 40%;
+  text-align:left;
+}
