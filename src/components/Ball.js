@@ -35,14 +35,29 @@ const bounce1 = keyframes`
         64%  { transform: scale(1,1)      translateY(0); }
         100% { transform: scale(1,1)      translateY(0); }`;
 
+  
+        
+        const shadow = keyframes`
+        0%, 10%{
+
+        }
+        30%{
+          transform: scaleX(.5);
+        }
+        50%, 100% {
+          transform: scaleX(1.0);
+        };`
+
 const Container = styled("div")`
   position: relative;
   width: 90px;
   height: 90px;
 
-  &:hover {
-    animation: ${bounce1} 3s ease infinite;
-  }
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+
 `;
 
 const Body = styled("div")`
@@ -52,8 +67,11 @@ const Body = styled("div")`
   background-color: ${(props) => props.color};
   border-radius: 50%;
   display: flex;
+  z-index: 1;
 
   box-shadow: 0px 2.5px 2px rgba(30, 30, 30, 0.3);
+    animation: ${bounce1} 4s ease infinite;
+  
 `;
 
 const blink = keyframes`
@@ -86,6 +104,17 @@ const Pupil = styled("div")`
   left: 3px;
 `;
 
+const Shadow = styled("div")`
+  width: 80px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #E9DCBA;
+  margin-top: -5px;
+  animation: ${shadow} 4s infinite;
+ 
+`;
+
+
 class Ball extends React.Component {
   constructor(props) {
     super(props);
@@ -108,6 +137,7 @@ class Ball extends React.Component {
             <Pupil></Pupil>
           </Eye>
         </Body>
+        <Shadow></Shadow>
       </Container>
     );
   }

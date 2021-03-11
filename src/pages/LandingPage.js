@@ -8,6 +8,8 @@ import Fade from "react-reveal/Fade";
 import SideNav from "../components/SideNav";
 import NameBar from "../components/NameBar";
 import matcha from "../images/matcha-latte.PNG";
+import linkedin from "../images/linkedin.svg";
+import mail from "../images/mail.svg";
 
 const { tablet } = mediaQueries;
 const { mobile } = mediaQueries;
@@ -32,18 +34,21 @@ const SectionOne = styled("div")`
   background-color: ${colors.lightyellow};
   display: flex;
   flex-direction: column;
-  padding-left: 15%;
-  padding-top: 15vh;
+  align-items: center;
+  padding-top: 30vh;
 
   box-sizing: border-box;
 `;
 
 const MainText = styled("div")`
-  text-align: left;
+  text-align: center;
   font-size: 30px;
   font-weight: 600;
   color: black;
-  margin-bottom: 15px;
+  margin-bottom: 20px;
+  margin-top: 40px;
+  letter-spacing: 2px;
+  
 
   ${tablet} {
     font-size: 27px;
@@ -55,12 +60,11 @@ const MainText = styled("div")`
 `;
 
 const SubText = styled("div")`
-  text-align: left;
-  font-size: 20px;
+  text-align: center;
+  font-size: 18px;
   letter-spacing: 2px;
   color: ${colors.primarygrey};
-  width: 400px;
-  margin-bottom: 100px;
+
 
   ${tablet} {
     font-size: 18px;
@@ -137,6 +141,13 @@ const Category = styled("div")`
   text-align: left;
 `;
 
+const Contact = styled("div")`
+  display: flex;
+  width: 100px;
+  justify-content: space-between;
+  margin-top: 70px;
+`;
+
 /*
  */
 
@@ -144,7 +155,7 @@ function LandingPage() {
   return (
     <Container>
       <SectionOne>
-        <Balls>
+       
           <Ball
             color={colors.red}
             leftEye="30px"
@@ -152,21 +163,35 @@ function LandingPage() {
             blinkTime="7s"
             jumpDelay="5s"
           />
-          <Ball
-            color={colors.orange}
-            leftEye="15px"
-            rightEye="20px"
-            blinkTime="5s"
-            jumpDelay="10s"
-          />
-          <Ball
-            color={colors.blue}
-            leftEye="10px"
-            rightEye="15px"
-            blinkTime="10s"
-            jumpDelay="15s"
-          />
-        </Balls>
+  
+        <MainText>matthew ko
+        </MainText>
+        <SubText>
+        design, development,
+        </SubText>
+        <SubText>
+        fish, plants,
+        </SubText>
+        <SubText>
+        guitar, tea
+        </SubText>
+        <div style={{marginTop: "20px"}}>
+        <SubText>
+        [on a break]
+        </SubText>
+        </div>
+        <div style={{marginTop: "20px"}}>
+      <Contact>
+       
+        <a href="mailto:mk9917@ucla.edu?">
+        <img src={mail} width ="30px" height="30px"></img>
+        </a>
+        <a href="https://www.linkedin.com/in/matthew-m-ko/">
+        <img src={linkedin} width ="30px" height="30px"></img>
+        </a>
+      </Contact>
+      </div>
+       
       </SectionOne>
     </Container>
   );
