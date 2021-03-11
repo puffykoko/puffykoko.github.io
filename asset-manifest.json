@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/static/css/main.daa2c708.chunk.css",
+    "main.js": "/static/js/main.8619d917.chunk.js",
+    "main.js.map": "/static/js/main.8619d917.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.8f25d53b.js",
+    "runtime-main.js.map": "/static/js/runtime-main.8f25d53b.js.map",
+    "static/js/2.32089f82.chunk.js": "/static/js/2.32089f82.chunk.js",
+    "static/js/2.32089f82.chunk.js.map": "/static/js/2.32089f82.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.d81eeb272383e2d32014f6922e7fab45.js": "/precache-manifest.d81eeb272383e2d32014f6922e7fab45.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/main.daa2c708.chunk.css.map": "/static/css/main.daa2c708.chunk.css.map",
+    "static/js/2.32089f82.chunk.js.LICENSE.txt": "/static/js/2.32089f82.chunk.js.LICENSE.txt",
+    "static/media/balls.PNG": "/static/media/balls.51a2eeb2.PNG",
+    "static/media/linkedin.svg": "/static/media/linkedin.9a894325.svg",
+    "static/media/mail.svg": "/static/media/mail.2a3c3fff.svg",
+    "static/media/matcha-latte.PNG": "/static/media/matcha-latte.94a32e54.PNG"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.8f25d53b.js",
+    "static/js/2.32089f82.chunk.js",
+    "static/css/main.daa2c708.chunk.css",
+    "static/js/main.8619d917.chunk.js"
+  ]
+}
