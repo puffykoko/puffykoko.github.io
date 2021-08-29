@@ -183,7 +183,7 @@ function LandingPage() {
         <div style={{marginTop: "20px"}}>
       <Contact>
        
-        <a href="mailto:mk9917@ucla.edu?">
+        <a href="mailto:mk9917@yahoo.com?">
         <img src={mail} width ="30px" height="30px"></img>
         </a>
         <a href="https://www.linkedin.com/in/matthew-m-ko/">
